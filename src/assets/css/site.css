@@ -227,6 +227,8 @@ ul.limpa { list-style: none; margin: 0; padding: 0; }
 .trilho { --borda: max(var(--gutter), calc(50vw - var(--larg) / 2)); display: grid; grid-auto-flow: column; grid-auto-columns: clamp(16rem, 27vw, 22rem); gap: 1.25rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--borda); padding: .25rem var(--borda) 1.5rem; margin-inline: calc(50% - 50vw); scrollbar-width: none; overscroll-behavior-x: contain; }
 .trilho::-webkit-scrollbar { display: none; }
 .trilho > li { scroll-snap-align: start; }
+/* Andando sozinho: sem o encaixe, senão o navegador puxa de volta a cada passo. */
+.carrossel.andando .trilho { scroll-snap-type: none; }
 .vitrine { position: relative; display: block; aspect-ratio: 3 / 4.1; border-radius: var(--r-foto); overflow: hidden; color: #FFFFFF; text-decoration: none; background: var(--noite); box-shadow: var(--sombra-leve); }
 .vitrine img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
 .vitrine::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(4, 12, 25, 0) 30%, rgba(4, 12, 25, .9) 100%); }
