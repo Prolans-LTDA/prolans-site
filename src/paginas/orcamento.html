@@ -1,0 +1,47 @@
+<!-- {"caminho": "orcamento/", "titulo": "Pedir orçamento | Prolans", "descricao": "Conte o tipo de imóvel e o que precisa. A mensagem chega pronta no WhatsApp da Prolans e a equipe responde com a melhor solução.", "scripts": ["formularios.js"]} -->
+<section class="titulo-pagina faixa">
+  <div class="miolo">
+    <nav class="trilha" aria-label="Você está em"><a href="{{link:}}">Início</a> / Pedir orçamento</nav>
+    <h1>Pedir orçamento</h1>
+    <p>Quatro perguntas e a mensagem chega pronta no nosso WhatsApp. Respondemos em horário comercial, e a visita técnica para projetos não tem custo.</p>
+  </div>
+</section>
+
+<section class="secao faixa">
+  <div class="miolo" style="max-width:46rem">
+    <form class="form" id="form-orcamento" novalidate>
+      <fieldset class="campo">
+        <legend>Que tipo de imóvel?</legend>
+        <div class="opcoes">
+          <label><input type="radio" name="imovel" value="Casa" checked>Casa</label>
+          <label><input type="radio" name="imovel" value="Apartamento">Apartamento</label>
+          <label><input type="radio" name="imovel" value="Condomínio">Condomínio</label>
+          <label><input type="radio" name="imovel" value="Comércio ou empresa">Comércio ou empresa</label>
+          <label><input type="radio" name="imovel" value="Pousada ou hotel">Pousada ou hotel</label>
+        </div>
+      </fieldset>
+      <fieldset class="campo">
+        <legend>O que você precisa?</legend>
+        <span class="ajuda">Marque quantos quiser.</span>
+        <div class="opcoes">
+          <label><input type="checkbox" name="servico" value="Câmeras">Câmeras</label>
+          <label><input type="checkbox" name="servico" value="Alarme">Alarme</label>
+          <label><input type="checkbox" name="servico" value="Controle de acesso">Controle de acesso</label>
+          <label><input type="checkbox" name="servico" value="Fechadura digital">Fechadura digital</label>
+          <label><input type="checkbox" name="servico" value="Interfone ou videoporteiro">Interfone</label>
+          <label><input type="checkbox" name="servico" value="Portão eletrônico">Portão</label>
+          <label><input type="checkbox" name="servico" value="Rede e Wi-Fi">Rede e Wi-Fi</label>
+          <label><input type="checkbox" name="servico" value="Automação">Automação</label>
+          <label><input type="checkbox" name="servico" value="Manutenção de sistema existente">Manutenção</label>
+        </div>
+      </fieldset>
+      <div class="par">
+        <div class="campo"><label for="o-cidade">Cidade e bairro</label><input id="o-cidade" name="cidade" placeholder="Teresópolis, Várzea" required></div>
+        <div class="campo"><label for="o-nome">Seu nome</label><input id="o-nome" name="nome" autocomplete="name" required></div>
+      </div>
+      <div class="campo"><label for="o-detalhe">Quer contar mais alguma coisa?</label><span class="ajuda">Opcional. Ex.: quantas câmeras imagina, se já tem algo instalado, prazo.</span><textarea id="o-detalhe" name="detalhe"></textarea></div>
+      <div class="aviso aviso-erro" id="o-erro" hidden></div>
+      <div><button class="botao botao-zap" type="submit"><svg><use href="#i-zap"/></svg>Enviar pelo WhatsApp</button></div>
+    </form>
+  </div>
+</section>

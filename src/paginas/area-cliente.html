@@ -1,0 +1,39 @@
+<!-- {"caminho": "area-cliente/", "titulo": "Área do cliente | Prolans", "descricao": "Clientes Prolans acessam ordens de serviço, propostas, contas e notas fiscais com um link enviado ao e-mail cadastrado.", "scripts": ["area-cliente.js"]} -->
+<section class="titulo-pagina faixa">
+  <div class="miolo">
+    <nav class="trilha" aria-label="Você está em"><a href="{{link:}}">Início</a> / Área do cliente</nav>
+    <h1>Área do cliente</h1>
+    <p>Suas ordens de serviço, propostas, contas em aberto e notas fiscais, direto do sistema da Prolans. Sem senha para lembrar: o acesso chega por link no seu e-mail.</p>
+  </div>
+</section>
+
+<section class="secao faixa">
+  <div class="miolo dois">
+    <form class="form" id="form-acesso" data-sistema="{{sistema}}" novalidate>
+      <h2 style="font-size:var(--t-4)">Receber link de acesso</h2>
+      <div class="campo">
+        <label for="a-email">E-mail cadastrado na Prolans</label>
+        <input id="a-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="voce@empresa.com.br" required>
+        <span class="ajuda">É o e-mail que recebe as notas fiscais e propostas da Prolans.</span>
+      </div>
+      <div class="aviso" id="a-retorno" hidden aria-live="polite"></div>
+      <div class="acoes">
+        <button class="botao botao-principal" type="submit" id="a-enviar">Enviar link de acesso</button>
+      </div>
+      <p class="suave" style="font-size:var(--t-0)">O link vale por 15 minutos e só funciona uma vez. Depois de entrar, o acesso fica lembrado neste aparelho.</p>
+    </form>
+
+    <div style="display:grid;gap:1.75rem;align-content:start">
+      <div style="display:grid;gap:.9rem">
+        <h2 style="font-size:var(--t-4)">O que você encontra lá</h2>
+        <ul class="limpa marcas-lista">
+          <li><svg><use href="#i-documento"/></svg><span><b>Ordens de serviço</b> com o que foi feito, fotos e o laudo em PDF.</span></li>
+          <li><svg><use href="#i-documento"/></svg><span><b>Propostas</b> enviadas para você, em PDF.</span></li>
+          <li><svg><use href="#i-relogio"/></svg><span><b>Contas em aberto</b> e o histórico do que já foi pago.</span></li>
+          <li><svg><use href="#i-escudo"/></svg><span><b>Notas fiscais</b> de serviço e de produto, com PDF e XML.</span></li>
+        </ul>
+      </div>
+      <div class="aviso aviso-info">O e-mail não chegou, ou mudou? Fale com a gente pelo <a href="{{zap:Olá, preciso de ajuda para acessar a área do cliente.}}">WhatsApp</a> e atualizamos o seu cadastro.</div>
+    </div>
+  </div>
+</section>

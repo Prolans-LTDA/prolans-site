@@ -1,0 +1,230 @@
+<!-- {"caminho": "", "titulo": "Prolans Segurança e Tecnologia | Câmeras, alarmes e automação em Teresópolis", "descricao": "Projeto, instalação e manutenção de câmeras, alarmes, controle de acesso, redes e automação em Teresópolis, Região Serrana e Rio de Janeiro. Equipamentos das principais marcas.", "scripts": ["planta.js", "carrossel.js", "visor.js"]} -->
+<section class="capa">
+  <img class="capa-foto" src="{{raiz}}assets/img/fotos/residencia-exterior.webp" alt="Imagem ilustrativa: casa na serra ao anoitecer, com câmeras sob o beiral" width="1200" height="800" fetchpriority="high">
+  <div class="capa-veu"></div>
+  <div class="visor" aria-hidden="true"><i></i><i></i><i></i><i></i><span class="canal">CAM 01 Teresópolis</span><span class="rec" id="visor-hora">REC</span><span class="mira"></span></div>
+  <div class="capa-conteudo faixa">
+    <div class="miolo">
+      <h1>Proteger o que importa começa no projeto.</h1>
+      <p>Câmeras, alarmes, controle de acesso, redes e automação para casas, condomínios e empresas em Teresópolis, na Região Serrana e no Rio. A Prolans projeta, instala e mantém.</p>
+      <div class="acoes">
+        <a class="botao botao-claro" href="{{link:orcamento/}}">Pedir orçamento</a>
+        <a class="botao botao-vidro" href="{{zap:Olá, vim pelo site da Prolans e gostaria de conversar sobre um projeto.}}"><svg><use href="#i-zap"/></svg>Conversar no WhatsApp</a>
+      </div>
+      <ul class="limpa selos">
+        <li><svg><use href="#i-estrela"/></svg><span><b>5,0 no Google</b>, 21 avaliações</span></li>
+        <li><svg><use href="#i-escudo"/></svg><span>Equipamentos das <b>principais marcas</b></span></li>
+        <li><svg><use href="#i-pino"/></svg><span>Em Teresópolis <b>desde 2020</b></span></li>
+      </ul>
+    </div>
+  </div>
+  <svg class="serra" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><use href="#serra-forma"/></svg>
+</section>
+
+<section class="secao faixa" style="padding-top:clamp(2.5rem,5vw,4rem)">
+  <div class="miolo">
+    <div class="cabeca-linha">
+      <div class="cabeca">
+        <h2>Para cada tipo de imóvel, um projeto</h2>
+        <p>Casa, condomínio, supermercado ou pousada pedem coisas diferentes. Escolha o seu e veja o que a Prolans instala.</p>
+      </div>
+      <a class="seta-link" href="{{link:solucoes/}}">Ver todas as soluções <svg><use href="#i-seta"/></svg></a>
+    </div>
+    {{carrossel}}
+    <p class="ilustrativo">As fotos das soluções são imagens ilustrativas.</p>
+  </div>
+</section>
+
+<section class="secao faixa cianotipia">
+  <div class="miolo">
+    <div class="cabeca" style="margin:0">
+      <h2>Antes de instalar, a gente desenha</h2>
+      <p>Todo projeto começa numa planta como esta: onde fica cada câmera, o que ela enxerga, por onde passa o cabo e até onde o Wi-Fi alcança. Toque nos itens da legenda.</p>
+      <p>É isso que evita câmera apontando para o muro, sensor que dispara com o gato e roteador escondido no armário.</p>
+      <div class="acoes" style="margin-top:.5rem"><a class="botao botao-principal" href="{{link:orcamento/}}">Pedir uma visita técnica</a></div>
+    </div>
+    <figure class="prancha">
+      <div class="prancha-desenho">
+        <svg class="planta" id="planta" viewBox="0 0 640 440" role="img" aria-labelledby="planta-titulo planta-desc">
+          <title id="planta-titulo">Planta de pontos de uma residência</title>
+          <desc id="planta-desc">Exemplo de projeto da Prolans: câmeras cobrindo garagem, frente e fundos; sensores de alarme na sala, no quarto e no escritório; fechadura digital na porta da frente; portão automático; interfone no muro; Wi-Fi no centro da casa; controle de acesso no escritório; automação de iluminação na sala e na cozinha.</desc>
+
+          <!-- áreas de visão das câmeras (desenhadas antes, ficam por baixo) -->
+          <polygon class="cone" data-k="camera" points="34,366 -10,440 120,440"/>
+          <polygon class="cone" data-k="camera" points="606,366 520,440 650,440"/>
+          <polygon class="cone" data-k="camera" points="606,34 650,-10 650,180"/>
+          <polygon class="cone" data-k="camera" points="34,34 -10,180 -10,-10"/>
+
+          <rect class="area-ext" x="14" y="14" width="612" height="412"/>
+          <path class="parede traco" d="M40 40 H600 V360 H335 M285 360 H185 M55 360 H40 V40"/>
+          <path class="divisoria traco" d="M200 40 V112 M200 152 V360 M40 220 H180 M200 200 H262 M302 200 H440 M480 200 H600 M420 40 V82 M420 122 V200 M420 230 V360 M290 40 V140 M200 140 H230 M262 140 H420"/>
+          <path class="porta" d="M185 360 h-130"/>
+
+          <text class="comodo" x="120" y="130" text-anchor="middle">Quarto 1</text>
+          <text class="comodo" x="120" y="300" text-anchor="middle">Garagem</text>
+          <text class="comodo" x="245" y="95" text-anchor="middle">Banho</text>
+          <text class="comodo" x="355" y="95" text-anchor="middle">Quarto 2</text>
+          <text class="comodo" x="310" y="185" text-anchor="middle">Circulação</text>
+          <text class="comodo" x="510" y="125" text-anchor="middle">Escritório</text>
+          <text class="comodo" x="300" y="300" text-anchor="middle">Sala</text>
+          <text class="comodo" x="510" y="300" text-anchor="middle">Cozinha</text>
+          <text class="comodo" x="560" y="414" text-anchor="middle">Calçada</text>
+
+          <g class="pontos">
+            <g transform="translate(34 366)"><g class="ponto" data-k="camera" tabindex="0" style="--i:0"><title>Câmera da garagem</title><circle class="base" r="13"/><use href="#i-camera" x="-9" y="-9" width="18" height="18"/></g></g>
+            <g transform="translate(606 366)"><g class="ponto" data-k="camera" tabindex="0" style="--i:1"><title>Câmera da frente</title><circle class="base" r="13"/><use href="#i-camera" x="-9" y="-9" width="18" height="18"/></g></g>
+            <g transform="translate(606 34)"><g class="ponto" data-k="camera" tabindex="0" style="--i:2"><title>Câmera dos fundos</title><circle class="base" r="13"/><use href="#i-camera" x="-9" y="-9" width="18" height="18"/></g></g>
+            <g transform="translate(34 34)"><g class="ponto" data-k="camera" tabindex="0" style="--i:3"><title>Câmera da lateral</title><circle class="base" r="13"/><use href="#i-camera" x="-9" y="-9" width="18" height="18"/></g></g>
+            <g transform="translate(222 338)"><g class="ponto" data-k="alarme" tabindex="0" style="--i:4"><title>Sensor de alarme da sala</title><circle class="base" r="13"/><use href="#i-alarme" x="-9" y="-9" width="18" height="18"/></g></g>
+            <g transform="translate(178 62)"><g class="ponto" data-k="alarme" tabindex="0" style="--i:5"><title>Sensor de alarme do quarto</title><circle class="base" r="13"/><use href="#i-alarme" x="-9" y="-9" width="18" height="18"/></g></g>
+            <g transform="translate(578 178)"><g class="ponto" data-k="alarme" tabindex="0" style="--i:6"><title>Sensor de alarme do escritório</title><circle class="base" r="13"/><use href="#i-alarme" x="-9" y="-9" width="18" height="18"/></g></g>
+            <g transform="translate(310 360)"><g class="ponto" data-k="fechadura" tabindex="0" style="--i:7"><title>Fechadura digital da porta da frente</title><circle class="base" r="13"/><use href="#i-fechadura" x="-9" y="-9" width="18" height="18"/></g></g>
+            <g transform="translate(120 360)"><g class="ponto" data-k="portao" tabindex="0" style="--i:8"><title>Portão automático da garagem</title><circle class="base" r="13"/><use href="#i-portao" x="-9" y="-9" width="18" height="18"/></g></g>
+            <g transform="translate(310 426)"><g class="ponto" data-k="interfone" tabindex="0" style="--i:9"><title>Videoporteiro no muro</title><circle class="base" r="13"/><use href="#i-interfone" x="-9" y="-9" width="18" height="18"/></g></g>
+            <g transform="translate(372 170)"><g class="ponto" data-k="rede" tabindex="0" style="--i:10"><title>Roteador Wi-Fi central</title><circle class="base" r="13"/><use href="#i-rede" x="-9" y="-9" width="18" height="18"/></g></g>
+            <g transform="translate(420 102)"><g class="ponto" data-k="acesso" tabindex="0" style="--i:11"><title>Controle de acesso do escritório</title><circle class="base" r="13"/><use href="#i-acesso" x="-9" y="-9" width="18" height="18"/></g></g>
+            <g transform="translate(300 250)"><g class="ponto" data-k="automacao" tabindex="0" style="--i:12"><title>Iluminação automatizada da sala</title><circle class="base" r="13"/><use href="#i-automacao" x="-9" y="-9" width="18" height="18"/></g></g>
+            <g transform="translate(510 250)"><g class="ponto" data-k="automacao" tabindex="0" style="--i:13"><title>Iluminação automatizada da cozinha</title><circle class="base" r="13"/><use href="#i-automacao" x="-9" y="-9" width="18" height="18"/></g></g>
+          </g>
+        </svg>
+      </div>
+      <div class="prancha-rodape">
+        <div class="legenda">
+          <span class="legenda-titulo" id="legenda-titulo">Legenda</span>
+          <ul class="limpa" aria-labelledby="legenda-titulo">
+            <li><button type="button" data-k="camera" aria-pressed="false"><svg><use href="#i-camera"/></svg>Câmeras</button></li>
+            <li><button type="button" data-k="alarme" aria-pressed="false"><svg><use href="#i-alarme"/></svg>Alarme</button></li>
+            <li><button type="button" data-k="fechadura" aria-pressed="false"><svg><use href="#i-fechadura"/></svg>Fechadura</button></li>
+            <li><button type="button" data-k="portao" aria-pressed="false"><svg><use href="#i-portao"/></svg>Portão</button></li>
+            <li><button type="button" data-k="interfone" aria-pressed="false"><svg><use href="#i-interfone"/></svg>Interfone</button></li>
+            <li><button type="button" data-k="rede" aria-pressed="false"><svg><use href="#i-rede"/></svg>Wi-Fi</button></li>
+            <li><button type="button" data-k="acesso" aria-pressed="false"><svg><use href="#i-acesso"/></svg>Acesso</button></li>
+            <li><button type="button" data-k="automacao" aria-pressed="false"><svg><use href="#i-automacao"/></svg>Automação</button></li>
+          </ul>
+        </div>
+        <div class="carimbo" aria-label="Carimbo do projeto">
+          <div><b>Planta de pontos</b>Segurança eletrônica</div>
+          <div><b>Residência</b>Exemplo</div>
+          <div><b>Escala</b>1:100</div>
+          <div><b>Folha</b>01/01</div>
+        </div>
+      </div>
+      <figcaption class="prancha-nota" id="planta-nota" aria-live="polite">Toque num item da legenda para ver onde ele entra no projeto.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="secao faixa">
+  <div class="miolo">
+    <div class="cabeca">
+      <h2>O que a gente instala e mantém</h2>
+      <p>Equipamento original com garantia de fábrica, instalação feita pela nossa equipe e tudo entregue funcionando no seu celular.</p>
+    </div>
+    <div class="servicos-lista">
+      <a href="{{link:servicos/}}#cftv"><svg class="anel"><use href="#i-camera"/></svg><h3>Câmeras e CFTV</h3><p>Wi-Fi, analógico ou IP, com gravação e acesso remoto.</p></a>
+      <a href="{{link:servicos/}}#alarme"><svg class="anel"><use href="#i-alarme"/></svg><h3>Alarmes</h3><p>Sensores sem fio, sirene e aviso no aplicativo.</p></a>
+      <a href="{{link:servicos/}}#acesso"><svg class="anel"><use href="#i-acesso"/></svg><h3>Controle de acesso</h3><p>Biometria, reconhecimento facial e tags, com registro de entradas.</p></a>
+      <a href="{{link:servicos/}}#fechadura"><svg class="anel"><use href="#i-fechadura"/></svg><h3>Fechaduras digitais</h3><p>Senha, digital, cartão e abertura pelo aplicativo.</p></a>
+      <a href="{{link:servicos/}}#interfone"><svg class="anel"><use href="#i-interfone"/></svg><h3>Interfones e videoporteiros</h3><p>Atenda o portão pelo monitor ou pelo celular.</p></a>
+      <a href="{{link:servicos/}}#portao"><svg class="anel"><use href="#i-portao"/></svg><h3>Portão eletrônico</h3><p>Motores deslizantes e basculantes, com controle e app.</p></a>
+      <a href="{{link:servicos/}}#rede"><svg class="anel"><use href="#i-rede"/></svg><h3>Redes e Wi-Fi</h3><p>Cabeamento, rack organizado e Wi-Fi sem pontos mortos.</p></a>
+      <a href="{{link:servicos/}}#automacao"><svg class="anel"><use href="#i-automacao"/></svg><h3>Automação</h3><p>Luzes, tomadas e cortinas pelo celular ou por voz.</p></a>
+      <a href="{{link:planos/}}"><svg class="anel"><use href="#i-manutencao"/></svg><h3>Manutenção</h3><p>Preventiva e corretiva, avulsa ou com o contrato Signature+.</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="secao faixa alt">
+  <div class="miolo">
+    <div class="cabeca">
+      <h2>Como o seu projeto anda com a gente</h2>
+      <p>Do primeiro contato ao sistema funcionando, você sabe o que vem a seguir e quem é o responsável.</p>
+    </div>
+    <ol class="limpa etapas">
+      <li><h3>Visita técnica</h3><p>Vamos até o local, entendemos a rotina e medimos o que precisa ser coberto.</p></li>
+      <li><h3>Projeto e proposta</h3><p>A proposta traz cada equipamento, a posição de cada ponto e o prazo.</p></li>
+      <li><h3>Instalação</h3><p>Equipe própria, cabos organizados e o local entregue limpo.</p></li>
+      <li><h3>Entrega assinada</h3><p>Testamos tudo com você, configuramos os aplicativos e a ordem de serviço sai com fotos e assinatura.</p></li>
+      <li><h3>Manutenção</h3><p>Preventiva agendada e suporte pelo WhatsApp quando precisar.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="secao faixa escura">
+  <img class="escudo-fundo" src="{{raiz}}assets/img/logo-180.png" alt="" width="180" height="180">
+  <div class="miolo dois">
+    <div class="cabeca" style="margin:0">
+      <h2>Signature+: o sistema funcionando o ano inteiro</h2>
+      <p>Contrato de manutenção com mensalidade fixa de mão de obra, feito sob medida para o que está instalado no seu imóvel. Câmera parada não protege nada.</p>
+      <div class="acoes" style="margin-top:1rem">
+        <a class="botao botao-principal" href="{{link:planos/}}">Conhecer o Signature+</a>
+        <a class="botao botao-linha" href="{{zap:Olá, quero saber mais sobre o contrato Signature+.}}">Falar com a equipe</a>
+      </div>
+    </div>
+    <ul class="limpa marcas-lista">
+      <li><svg><use href="#i-relogio"/></svg><span><b>Atendimento corretivo em até 36 horas</b> depois de aberto o chamado.</span></li>
+      <li><svg><use href="#i-manutencao"/></svg><span><b>Visitas preventivas agendadas</b> para limpeza, ajustes e atualização dos equipamentos.</span></li>
+      <li><svg><use href="#i-zap"/></svg><span><b>Suporte direto pelo WhatsApp</b> com a equipe técnica, com diagnóstico remoto.</span></li>
+      <li><svg><use href="#i-documento"/></svg><span><b>Peças cobradas só quando trocadas.</b> A mão de obra já está no contrato.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="secao faixa">
+  <div class="miolo">
+    <div class="cabeca-linha">
+      <div class="cabeca">
+        <div class="nota-google">
+          <span class="numero">5,0</span>
+          <div><div class="estrelas" aria-label="5 de 5 estrelas">★★★★★</div><span class="suave">21 avaliações públicas no Google</span></div>
+        </div>
+        <h2>Quem contratou recomenda</h2>
+      </div>
+      <a class="seta-link" href="{{link:avaliacoes/}}">Ler todas as avaliações <svg><use href="#i-seta"/></svg></a>
+    </div>
+    <div class="depoimentos">
+      <figure>
+        <blockquote>Surpreendente. Compromisso. Sem deixar bagunça. Explicação nota 1000. Fora a segurança e facilidade em manusear.</blockquote>
+        <figcaption><b>Marinéa Medeiros</b>Avaliação no Google</figcaption>
+      </figure>
+      <figure>
+        <blockquote>Somos parceiros há quatro anos. A manutenção é impecável e a equipe extremamente profissional. Sempre que precisamos, eles estão prontos para resolver.</blockquote>
+        <figcaption><b>Supermercado Rio Sul</b>Cliente desde 2021</figcaption>
+      </figure>
+      <figure>
+        <blockquote>Empresa extremamente confiável. Atendimento excelente, instalação rápida e deixaram tudo organizado. Super indico.</blockquote>
+        <figcaption><b>Alessandra Marques</b>Avaliação no Google</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="secao faixa alt" style="padding-block:clamp(2.5rem,5vw,4rem)">
+  <div class="miolo">
+    <h2 style="font-size:var(--t-4);margin-bottom:1.25rem">Alguns clientes em Teresópolis e região</h2>
+    <ul class="limpa clientes">
+      <li>Rio Sul Supermercados</li><li>Unifeso</li><li>Zimbrão</li><li>Burrata Empório e Bistrô</li>
+      <li>Pravda Administradora</li><li>Serra Garden</li><li>Michael Pimentel Arquitetura</li><li>Empada Mix</li>
+      <li>Styllus Truck</li><li>Dojo Sushi</li><li>Moto Guedes</li><li>Prático Mercado Autônomo</li>
+    </ul>
+  </div>
+</section>
+
+<section class="final">
+  <img class="capa-foto" src="{{raiz}}assets/img/fotos/pousada-chales.webp" alt="" width="1200" height="800" loading="lazy" decoding="async">
+  <svg class="serra topo-serra para-alt" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><use href="#serra-ceu"/></svg>
+  <div class="faixa">
+    <div class="miolo final-conteudo">
+      <div style="display:grid;gap:1.25rem">
+        <h2>Conte o que precisa proteger.</h2>
+        <p>Quatro perguntas rápidas e a mensagem chega pronta no nosso WhatsApp. A visita técnica para projetos não tem custo.</p>
+        <div class="acoes"><a class="botao botao-claro" href="{{link:orcamento/}}">Pedir orçamento</a></div>
+      </div>
+      <div class="contatos">
+        <div><b>{{tel}}</b>WhatsApp e telefone</div>
+        <div><b>{{email}}</b>E-mail</div>
+        <div><b>Teresópolis (RJ)</b>Praça Baltazar da Silveira, 90, Várzea</div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,180 @@
+{
+  "_nota": "Soluções por tipo de imóvel. Descrevem SÓ o que a Prolans faz. Nada de obra, cliente, quantidade ou prazo que não aconteceu. As fotos são imagens ilustrativas. Quando houver foto de obra real (com autorização), ela entra em 'fotos' com 'real': true.",
+  "nichos": [
+    {
+      "id": "residencias",
+      "nome": "Residências",
+      "titulo": "Sua casa à vista no celular, de onde estiver",
+      "frase": "Câmeras, alarme, fechadura digital, portão, Wi-Fi e automação numa casa só, instalados e mantidos pela mesma equipe.",
+      "fotos": [
+        {"arquivo": "residencia-exterior", "legenda": "Imagem ilustrativa: fachada com câmeras sob o beiral e videoporteiro na entrada"},
+        {"arquivo": "residencia-interior", "legenda": "Imagem ilustrativa: sala com iluminação automatizada e comando por voz"}
+      ],
+      "importa": [
+        "Ver a casa de longe, com imagem nítida também à noite",
+        "Saber na hora quando alguém entra sem ser esperado",
+        "Abrir porta e portão sem chave nem controle perdido",
+        "Wi-Fi que chega no quarto do fundo e na área externa"
+      ],
+      "servicos": [
+        {"id": "cftv", "texto": "Câmeras na garagem, entradas e fundos, com gravação e acesso pelo celular."},
+        {"id": "alarme", "texto": "Alarme com sensores sem fio, separado por setores, com aviso no aplicativo."},
+        {"id": "fechadura", "texto": "Fechadura digital com senha, digital e abertura pelo aplicativo."},
+        {"id": "interfone", "texto": "Videoporteiro que toca no monitor e, nos modelos conectados, no celular."},
+        {"id": "portao", "texto": "Automatização de portão deslizante ou basculante."},
+        {"id": "rede", "texto": "Wi-Fi mesh e pontos de rede para o sinal chegar em todos os cômodos."},
+        {"id": "automacao", "texto": "Luzes, tomadas e cortinas pelo celular, por horário ou por voz."}
+      ],
+      "perguntas": [
+        ["Dá para ver as câmeras fora de casa?", "Sim. Na entrega configuramos o aplicativo do fabricante no seu celular, com acesso protegido por senha."],
+        ["Preciso fazer tudo de uma vez?", "Não. Dá para começar pelas câmeras, por exemplo, e acrescentar alarme ou automação depois. O projeto já prevê o que vem a seguir."]
+      ]
+    },
+    {
+      "id": "condominios",
+      "nome": "Condomínios",
+      "titulo": "Portaria que sabe quem entra",
+      "frase": "Controle de acesso, câmeras das áreas comuns, interfonia e manutenção com prazo para a portaria não parar.",
+      "fotos": [
+        {"arquivo": "condominio-portaria", "legenda": "Imagem ilustrativa: portão de pedestres com leitor facial no pilar"}
+      ],
+      "importa": [
+        "Acabar com chave copiada sem controle",
+        "Retirar o acesso de quem se mudou, sem trocar fechadura",
+        "Encontrar a imagem de um dia específico quando o síndico precisar",
+        "Interfone funcionando em todas as unidades"
+      ],
+      "servicos": [
+        {"id": "acesso", "texto": "Reconhecimento facial, tag e cartão no portão de pedestres e na garagem."},
+        {"id": "cftv", "texto": "Câmeras nas entradas, garagem e áreas comuns, com o tempo de gravação dimensionado antes da compra."},
+        {"id": "interfone", "texto": "Interfonia e videoporteiro ligados à portaria."},
+        {"id": "portao", "texto": "Motores e manutenção dos portões de veículos."},
+        {"id": "manutencao", "texto": "Contrato Signature+, com preventiva agendada e atendimento corretivo em até 36 horas."}
+      ],
+      "perguntas": [
+        ["Vocês atendem o condomínio pelo síndico ou pela administradora?", "Pelos dois. A proposta e os relatórios saem para quem o condomínio indicar."],
+        ["Quanto tempo as câmeras gravam?", "O que o condomínio definir. Calculamos o disco para o número de câmeras e os dias de gravação desejados."]
+      ]
+    },
+    {
+      "id": "supermercados",
+      "nome": "Supermercados",
+      "titulo": "Caixa, estoque e estacionamento sob o mesmo olhar",
+      "frase": "Câmeras posicionadas para o que importa no varejo, alarme nas portas de serviço e rede que aguenta o movimento.",
+      "fotos": [
+        {"arquivo": "supermercado-corredor", "legenda": "Imagem ilustrativa: câmeras dome cobrindo os corredores"}
+      ],
+      "importa": [
+        "Conferir uma divergência de caixa pela data e pela hora",
+        "Gravação contínua no estoque e na doca",
+        "Portas de serviço protegidas fora do expediente",
+        "Acompanhar a loja pelo celular"
+      ],
+      "servicos": [
+        {"id": "cftv", "texto": "Câmeras no caixa, corredores, estoque, doca e estacionamento."},
+        {"id": "alarme", "texto": "Alarme nas portas de serviço e áreas restritas, armado no fechamento."},
+        {"id": "rede", "texto": "Rack, switch e cabeamento para câmeras e sistemas da loja."},
+        {"id": "manutencao", "texto": "Manutenção preventiva para o sistema não falhar justamente quando for preciso."}
+      ],
+      "perguntas": [
+        ["Dá para instalar sem fechar a loja?", "Sim. Combinamos horários fora do movimento para a instalação não atrapalhar o atendimento."]
+      ]
+    },
+    {
+      "id": "comercio",
+      "nome": "Comércio",
+      "titulo": "A loja fechada continua vigiada",
+      "frase": "Alarme com aviso no celular e câmeras na porta, na vitrine e no balcão, com a fiação escondida.",
+      "fotos": [
+        {"arquivo": "loja-fachada", "legenda": "Imagem ilustrativa: câmera sobre a porta e sirene na fachada"}
+      ],
+      "importa": [
+        "Saber na hora se o alarme disparou",
+        "Ver a loja pelo celular depois de fechar",
+        "Vitrine sem fio aparente",
+        "Instalação rápida, sem parar o atendimento"
+      ],
+      "servicos": [
+        {"id": "alarme", "texto": "Alarme com sensores na porta, vitrine e estoque, com aviso no aplicativo."},
+        {"id": "cftv", "texto": "Câmeras na porta, no balcão e no estoque, com acesso remoto."},
+        {"id": "fechadura", "texto": "Fechadura digital para o escritório ou o estoque."},
+        {"id": "rede", "texto": "Wi-Fi para a loja e uma rede separada para clientes."}
+      ],
+      "perguntas": [
+        ["O alarme avisa só no celular?", "Avisa no aplicativo e toca a sirene no local. Você decide quem da equipe recebe o aviso."]
+      ]
+    },
+    {
+      "id": "empresas",
+      "nome": "Empresas e escritórios",
+      "titulo": "Rede organizada e cada porta abrindo só para quem deve",
+      "frase": "Cabeamento, rack e Wi-Fi corporativo, mais controle de acesso com registro de entradas.",
+      "fotos": [
+        {"arquivo": "escritorio-acesso", "legenda": "Imagem ilustrativa: leitor de digital e cartão na porta do escritório"}
+      ],
+      "importa": [
+        "Internet estável, sem queda no meio do expediente",
+        "Rack arrumado e cabos identificados",
+        "Funcionário desligado perde o acesso na hora",
+        "Wi-Fi separado para visitantes"
+      ],
+      "servicos": [
+        {"id": "rede", "texto": "Pontos de rede, organização de rack, switches e Wi-Fi corporativo."},
+        {"id": "acesso", "texto": "Leitores de digital, cartão ou rosto nas portas, com relatório de entradas."},
+        {"id": "cftv", "texto": "Câmeras na recepção, nos acessos e no estacionamento."},
+        {"id": "automacao", "texto": "Desligar luzes e equipamentos por horário no fim do dia."}
+      ],
+      "perguntas": [
+        ["Vocês documentam a rede?", "Sim. Os pontos e as portas do rack ficam identificados, para qualquer técnico entender a instalação depois."]
+      ]
+    },
+    {
+      "id": "pousadas",
+      "nome": "Pousadas e hotéis",
+      "titulo": "Hóspede conectado no chalé mais distante",
+      "frase": "Wi-Fi externo, fechaduras digitais nos quartos e câmeras nos acessos, pensados para a rotina da hospedagem.",
+      "fotos": [
+        {"arquivo": "pousada-chales", "legenda": "Imagem ilustrativa: ponto de Wi-Fi externo entre os chalés"}
+      ],
+      "importa": [
+        "Wi-Fi bom em todos os quartos e áreas comuns",
+        "Quarto sem chave para perder ou copiar",
+        "Senha nova para cada hospedagem",
+        "Portão e estacionamento à vista da recepção"
+      ],
+      "servicos": [
+        {"id": "rede", "texto": "Wi-Fi externo resistente a chuva, cobrindo chalés, restaurante e piscina."},
+        {"id": "fechadura", "texto": "Fechaduras digitais com senha por hospedagem."},
+        {"id": "cftv", "texto": "Câmeras no portão, estacionamento e recepção."},
+        {"id": "interfone", "texto": "Interfone no portão com atendimento na recepção."}
+      ],
+      "perguntas": [
+        ["O Wi-Fi alcança lugares sem tomada perto?", "Os pontos de Wi-Fi externos recebem energia pelo próprio cabo de rede, então não precisam de tomada no local."]
+      ]
+    },
+    {
+      "id": "saude-educacao",
+      "nome": "Clínicas e escolas",
+      "titulo": "Entrada controlada e áreas restritas protegidas",
+      "frase": "Controle de acesso, câmeras nos espaços comuns e videoporteiro na entrada, respeitando a privacidade de pacientes e alunos.",
+      "fotos": [
+        {"arquivo": "clinica-recepcao", "legenda": "Imagem ilustrativa: recepção com câmera e porta de acesso por cartão"}
+      ],
+      "importa": [
+        "Salas restritas abrindo só para a equipe",
+        "Saber quem entrou e em que horário",
+        "Portão que só abre com alguém olhando",
+        "Câmeras nos espaços comuns, nunca nas salas de atendimento"
+      ],
+      "servicos": [
+        {"id": "acesso", "texto": "Leitores de cartão, digital ou rosto em consultórios, salas e catracas."},
+        {"id": "cftv", "texto": "Câmeras na recepção, corredores, pátio e portões."},
+        {"id": "interfone", "texto": "Videoporteiro no portão com atendimento na recepção ou secretaria."},
+        {"id": "rede", "texto": "Rede e Wi-Fi para sistemas, equipe e visitantes."}
+      ],
+      "perguntas": [
+        ["As imagens ficam guardadas por quanto tempo?", "Pelo prazo que a direção definir. O tempo de gravação é dimensionado no projeto."]
+      ]
+    }
+  ]
+}

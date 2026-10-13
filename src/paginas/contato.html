@@ -1,0 +1,37 @@
+<!-- {"caminho": "contato/", "titulo": "Contato | Prolans Segurança e Tecnologia", "descricao": "WhatsApp (21) 99711-2008, contato@prolans.com.br. Praça Baltazar da Silveira, 90, Várzea, Teresópolis (RJ). Segunda a sexta, 8h às 18h.", "menu": "contato", "scripts": ["formularios.js"]} -->
+<section class="titulo-pagina faixa">
+  <div class="miolo">
+    <nav class="trilha" aria-label="Você está em"><a href="{{link:}}">Início</a> / Contato</nav>
+    <h1>Contato</h1>
+    <p>O caminho mais rápido é o WhatsApp: você fala direto com a equipe técnica, sem fila.</p>
+  </div>
+</section>
+
+<section class="secao faixa">
+  <div class="miolo dois">
+    <form class="form" id="form-contato" novalidate>
+      <h2 style="font-size:var(--t-4)">Mande uma mensagem</h2>
+      <p class="suave" style="font-size:var(--t-1)">Ao enviar, o WhatsApp abre com a mensagem pronta. É só confirmar.</p>
+      <div class="par">
+        <div class="campo"><label for="c-nome">Seu nome</label><input id="c-nome" name="nome" autocomplete="name" required></div>
+        <div class="campo"><label for="c-fone">WhatsApp</label><input id="c-fone" name="fone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(21) 90000-0000" required></div>
+      </div>
+      <div class="campo"><label for="c-assunto">Assunto</label>
+        <select id="c-assunto" name="assunto"><option>Orçamento</option><option>Suporte técnico</option><option>Contrato Signature+</option><option>Financeiro</option><option>Outro assunto</option></select></div>
+      <div class="campo"><label for="c-msg">Mensagem</label><textarea id="c-msg" name="mensagem" required></textarea></div>
+      <div class="aviso aviso-erro" id="c-erro" hidden></div>
+      <div><button class="botao botao-zap" type="submit"><svg><use href="#i-zap"/></svg>Enviar pelo WhatsApp</button></div>
+    </form>
+
+    <div style="display:grid;gap:2rem;align-content:start">
+      <dl class="ficha">
+        <div><dt>WhatsApp e telefone</dt><dd><a href="{{zap}}">{{tel}}</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:{{email}}">{{email}}</a></dd></div>
+        <div><dt>Endereço</dt><dd>Praça Baltazar da Silveira, 90<br>Várzea, Teresópolis (RJ)<br><a href="{{mapa}}">Abrir no Google Maps</a></dd></div>
+        <div><dt>Horário de atendimento</dt><dd>Segunda a sexta, 8h às 18h<br>Sábado, 9h às 13h</dd></div>
+        <div><dt>Redes</dt><dd><a href="https://www.instagram.com/contato.prolans">Instagram @contato.prolans</a><br><a href="https://www.facebook.com/contato.prolans">Facebook</a></dd></div>
+      </dl>
+      <div class="aviso aviso-info">Já é cliente e precisa de uma nota, conta ou ordem de serviço? Use a <a href="{{link:area-cliente/}}">área do cliente</a>.</div>
+    </div>
+  </div>
+</section>
