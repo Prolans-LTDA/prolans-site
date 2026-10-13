@@ -1,4 +1,4 @@
-Publicacao 12/10/2026 23:28:47,44 
+Publicacao 12/10/2026 23:32:02,75 
 === status 
- M PUBLICAR-SITE.bat
-?? publicacao-log.txt
+ M .gitignore
+ M publicacao-log.txt
