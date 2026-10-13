@@ -519,3 +519,18 @@ fieldset.campo { border: 0; padding: 0; margin: 0; }
 .ilustra span:nth-child(2) { width: 52%; aspect-ratio: 1; border-style: solid; border-color: rgba(242, 169, 64, .55); box-shadow: 0 0 0 10px rgba(242, 169, 64, .12); }
 .ilustra svg { position: relative; width: 30%; height: 30%; color: #FFFFFF; }
 @media (max-width: 52rem) { .ilustra { max-width: 11rem; } }
+
+/* Serra dos Órgãos (contorno da foto real do Dedo de Deus) no topo da
+   última seção. A seção sobe por trás do conteúdo de cima; só aparece
+   o recorte das montanhas, na proporção da foto. */
+.final-serra { --serra-l: 56vw; --serra-a: calc(var(--serra-l) * 215 / 400);
+  margin-top: calc(-1 * var(--serra-a)); padding-top: var(--serra-a); z-index: 0;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='100 90 400 215' preserveAspectRatio='none'%3E%3Cpath d='M100 305L117 291L123 287L135 283L141 279L148 264L160 256L173 242L205 200L220 176L225 178L233 201L238 206L245 220L250 224L256 224L261 219L276 211L289 211L293 209L306 181L310 181L315 199L323 211L330 211L344 207L355 198L361 184L370 170L371 162L375 158L378 151L386 148L391 153L393 148L401 142L405 142L408 147L414 142L420 142L425 138L433 122L432 109L436 97L437 97L440 97L444 101L444 106L447 111L447 130L453 142L452 150L458 156L460 163L463 165L476 145L485 135L490 123L496 116L498 109L500 109L500 305Z'/%3E%3C/svg%3E"), linear-gradient(#000, #000);
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='100 90 400 215' preserveAspectRatio='none'%3E%3Cpath d='M100 305L117 291L123 287L135 283L141 279L148 264L160 256L173 242L205 200L220 176L225 178L233 201L238 206L245 220L250 224L256 224L261 219L276 211L289 211L293 209L306 181L310 181L315 199L323 211L330 211L344 207L355 198L361 184L370 170L371 162L375 158L378 151L386 148L391 153L393 148L401 142L405 142L408 147L414 142L420 142L425 138L433 122L432 109L436 97L437 97L440 97L444 101L444 106L447 111L447 130L453 142L452 150L458 156L460 163L463 165L476 145L485 135L490 123L496 116L498 109L500 109L500 305Z'/%3E%3C/svg%3E"), linear-gradient(#000, #000);
+  -webkit-mask-size: var(--serra-l) var(--serra-a), 100% calc(100% - var(--serra-a) + 1px);
+          mask-size: var(--serra-l) var(--serra-a), 100% calc(100% - var(--serra-a) + 1px);
+  -webkit-mask-position: right top, left bottom; mask-position: right top, left bottom;
+  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
+.final-serra .final-conteudo { padding-top: clamp(2.5rem, 5vw, 4rem); }
+main > section:not(.final) > .miolo { position: relative; z-index: 2; }
+@media (max-width: 48rem) { .final-serra { --serra-l: 100vw; } }

@@ -1,4 +1,6 @@
-Publicacao 12/10/2026 23:36:58,48 
+Publicacao 13/10/2026  0:19:51,35 
 === status 
  M publicacao-log.txt
+ M src/assets/css/site.css
  M src/paginas/inicio.html
+ M src/partials/icones.svg
